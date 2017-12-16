@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { SignupFormComponent } from './signup-form/signup-form.component';
+import { ReactiveFormsModule ,FormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -12,7 +13,9 @@ import { SignupFormComponent } from './signup-form/signup-form.component';
     SignupFormComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
